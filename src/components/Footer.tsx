@@ -1,4 +1,5 @@
 import { footerGroups } from '../data';
+import { brandLogoImage } from '../assets';
 
 export function Footer() {
   return (
@@ -32,7 +33,7 @@ export function Footer() {
       <div className="footer-bottom">
         <div className="container footer-bottom-inner">
           <div className="footer-branding">
-            <img className="brand-logo brand-logo--footer" src="/images/logo-yuxing.png" alt="昱行商旅" />
+            <img className="brand-logo brand-logo--footer" src={brandLogoImage} alt="昱行商旅" />
             <p>
               昱行商旅专注企业与个人机票出行服务，为用户提供便捷、透明、安心的航班预订体验。
             </p>

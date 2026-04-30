@@ -1,11 +1,12 @@
 import { navItems } from '../data';
+import { brandLogoImage } from '../assets';
 
 export function Header() {
   return (
     <header className="site-header">
       <div className="container header-inner">
         <div className="brand-logo-float">
-          <img className="brand-logo" src="/images/logo-yuxing.png" alt="昱行商旅" />
+          <img className="brand-logo" src={brandLogoImage} alt="昱行商旅" />
         </div>
 
         <nav aria-label="主导航" className="main-nav">

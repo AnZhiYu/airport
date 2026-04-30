@@ -2,6 +2,7 @@ import { render, screen } from '@testing-library/react';
 import userEvent from '@testing-library/user-event';
 import { describe, expect, it } from 'vitest';
 import App from './App';
+import { dealItems } from './data';
 
 describe('homepage', () => {
   it('renders the complete homepage shell', () => {
@@ -34,5 +35,20 @@ describe('homepage', () => {
     await user.click(screen.getByRole('button', { name: '搜索航班' }));
 
     expect(screen.getByText('已选择：上海 → 北京，2026-06-01')).toBeInTheDocument();
+  });
+
+  it('uses deployment-safe image paths instead of root-relative public paths', () => {
+    render(<App />);
+
+    const hero = document.querySelector('.hero');
+    expect(hero).toHaveStyle({
+      backgroundImage: expect.stringContaining('/airport/assets/'),
+    });
+
+    const logo = screen.getAllByAltText('昱行商旅')[0];
+    expect(logo).toHaveAttribute('src');
+    expect(logo.getAttribute('src')).toContain('/airport/assets/');
+
+    expect(dealItems[0]?.image.startsWith('/airport/assets/')).toBe(true);
   });
 });

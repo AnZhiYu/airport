@@ -1,4 +1,5 @@
 import type { CityOption, DealItem, FooterGroup, NavItem, ServiceItem } from './types';
+import { dealImageMap } from './assets';
 
 export const navItems: NavItem[] = [
   { label: '首页', active: true },
@@ -30,11 +31,11 @@ export const serviceItems: ServiceItem[] = [
 ];
 
 export const dealItems: DealItem[] = [
-  { route: '上海 → 北京', date: '06-01 周一', price: 520, discount: '经济舱2.4折', image: '/images/deal-beijing.png' },
-  { route: '上海 → 广州', date: '06-02 周二', price: 580, discount: '经济舱2.8折', image: '/images/deal-guangzhou.png' },
-  { route: '上海 → 深圳', date: '06-03 周三', price: 610, discount: '经济舱3.1折', image: '/images/deal-shenzhen.png' },
-  { route: '上海 → 成都', date: '06-04 周四', price: 660, discount: '经济舱3.3折', image: '/images/deal-chengdu.png' },
-  { route: '上海 → 杭州', date: '06-05 周五', price: 430, discount: '经济舱2.1折', image: '/images/deal-hangzhou.png' },
+  { route: '上海 → 北京', date: '06-01 周一', price: 520, discount: '经济舱2.4折', image: dealImageMap.beijing },
+  { route: '上海 → 广州', date: '06-02 周二', price: 580, discount: '经济舱2.8折', image: dealImageMap.guangzhou },
+  { route: '上海 → 深圳', date: '06-03 周三', price: 610, discount: '经济舱3.1折', image: dealImageMap.shenzhen },
+  { route: '上海 → 成都', date: '06-04 周四', price: 660, discount: '经济舱3.3折', image: dealImageMap.chengdu },
+  { route: '上海 → 杭州', date: '06-05 周五', price: 430, discount: '经济舱2.1折', image: dealImageMap.hangzhou },
 ];
 
 export const footerGroups: FooterGroup[] = [

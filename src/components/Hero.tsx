@@ -1,6 +1,13 @@
+import { heroBackgroundImage } from '../assets';
+
 export function Hero() {
   return (
-    <section className="hero">
+    <section
+      className="hero"
+      style={{
+        backgroundImage: `url(${heroBackgroundImage}), radial-gradient(circle at 18% 18%, rgba(255, 255, 255, 0.96), rgba(255, 255, 255, 0.18) 36%, rgba(255, 255, 255, 0) 54%), linear-gradient(180deg, #eaf5ff 0%, #d7eaff 42%, #cde4ff 100%)`,
+      }}
+    >
       <div className="hero-backdrop" aria-hidden="true" />
 
       <div className="container hero-inner">

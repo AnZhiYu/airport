@@ -1,3 +1,5 @@
+import { businessBannerImage } from '../assets';
+
 export function BusinessBannerVisual() {
-  return <img className="business-image" src="/images/business-travel.png" alt="" />;
+  return <img className="business-image" src={businessBannerImage} alt="" />;
 }
