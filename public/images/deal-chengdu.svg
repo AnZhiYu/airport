@@ -1,0 +1,24 @@
+<svg width="640" height="420" viewBox="0 0 640 420" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg" x1="72" y1="22" x2="550" y2="390" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#87CCFF"/>
+      <stop offset="0.5" stop-color="#63A0EE"/>
+      <stop offset="1" stop-color="#214C7F"/>
+    </linearGradient>
+  </defs>
+  <rect width="640" height="420" fill="url(#bg)"/>
+  <circle cx="492" cy="82" r="36" fill="#FFF2C7"/>
+  <rect x="0" y="302" width="640" height="118" fill="#1C2C4A" fill-opacity="0.68"/>
+  <rect x="108" y="178" width="40" height="124" fill="#9BBDF1"/>
+  <rect x="168" y="112" width="58" height="190" rx="12" fill="#DDE9FF"/>
+  <rect x="252" y="148" width="38" height="154" fill="#8FB2EB"/>
+  <rect x="312" y="78" width="32" height="224" fill="#B9D0F4"/>
+  <ellipse cx="328" cy="72" rx="32" ry="10" fill="#D9E8FF"/>
+  <circle cx="490" cy="238" r="50" fill="white" fill-opacity="0.88"/>
+  <circle cx="470" cy="226" r="15" fill="#152238"/>
+  <circle cx="514" cy="226" r="15" fill="#152238"/>
+  <circle cx="492" cy="254" r="18" fill="#152238"/>
+  <ellipse cx="452" cy="298" rx="26" ry="18" fill="white" fill-opacity="0.92"/>
+  <ellipse cx="534" cy="298" rx="28" ry="20" fill="white" fill-opacity="0.92"/>
+  <path d="M0 344C112 330 194 350 270 344C355 337 421 292 499 298C556 303 602 338 640 333V420H0V344Z" fill="#081629" fill-opacity="0.4"/>
+</svg>
